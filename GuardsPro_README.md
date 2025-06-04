@@ -87,7 +87,7 @@ npm run dev
 Create `.env` in `admin_dashboard`:
 
 ```env
-VITE_API_BASE_URL=http://localhost:8000
+VITE_API_BASE_URL=http://localhost:8080
 ```
 
 ---
@@ -152,7 +152,7 @@ To serve the React dashboard on a specific port (e.g., 8001), configure `vite.co
 
 ## 📌 Notes
 
-- Backend is served on port **8000**
+- Backend is served on port **8080**
 - Admin Dashboard on port **8001**
 - DB is PostgreSQL running in container named `db`
 - Alembic used for DB schema migrations
