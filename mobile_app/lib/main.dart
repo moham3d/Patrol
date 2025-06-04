@@ -22,7 +22,9 @@ class _MyAppState extends State<MyApp> {
 
   Future<void> checkApi() async {
     try {
+
       final res = await http.get(Uri.parse(const String.fromEnvironment('API_URL', defaultValue: 'http://localhost:8080') + '/dar_reports/'));
+
       setState(() {
         message = res.statusCode == 200 ? 'API Connected' : 'API Error';
       });
